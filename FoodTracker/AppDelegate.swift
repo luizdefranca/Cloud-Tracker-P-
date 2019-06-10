@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        self.showOnboarding()
         return true
     }
 
@@ -91,3 +92,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//extension AppDelegate {
+//    func showOnboarding() {
+//        if let window = window, let loginViewController = UIStoryboard(name: "LoginScreen", bundle: nil).instantiateInitialViewController() as? LogViewController {
+//            loginViewController.delegate = self
+//            window.makeKeyAndVisible()
+//            window.rootViewController?.present(loginViewController, animated: false,
+//            completion: nil)
+//        } }
+//    func hideOnboarding() {
+//        if let window = UIApplication.shared.keyWindow {
+//            window.rootViewController?.dismiss(animated: true, completion: nil)
+//        }
+//    } }
